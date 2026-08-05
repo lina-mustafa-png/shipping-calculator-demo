@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"/> <!-- describes the charcter system used -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- proper display on different screen sizes -->
+        <title>Shipping Calculator Demo</title>
+        <link rel="stylesheet" href="shipping-style.css"/>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <body>
+            <h1>Shipping Cost Calculator</h1>
+            <label>Parcel Type</label>
+            <select id="type">
+                <option value="standard">Standard</option>
+                <option value="express">Express</option>
+                <option value="international">International</option>
+            </select>
+
+            <label>Weight (kg)</label>
+            <input id="weight" type="number">
+
+            <label>Distance (km)</label>
+            <input id="distance" type="number">
+
+            <label>Insurance</label>
+            <input id="insurance" type="checkbox">
+
+            <label>Size</label>
+            <select id="size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+            </select>
+
+            <label>Same Day Delivery</label>
+            <input id="sameDayDel" type="checkbox">
+
+            <button onClick="calculate()">Calculate Cost</button>
+            <h2 id="result"></h2>
+
+            <script src="shipping-script.js"></script>
+        </body>
+    </head>
+</html>
